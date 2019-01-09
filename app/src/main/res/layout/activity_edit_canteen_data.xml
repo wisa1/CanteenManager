@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.EditCanteenDataActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblCanteenName"/>
+
+        <EditText
+            android:id="@+id/edtCanteenName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+        <!-- google maps stuff -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblWebsite"/>
+
+        <EditText
+            android:id="@+id/edtCanteenWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            ></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblAvgWaitingTime"/>
+
+        <TextView
+            android:id="@+id/seekbarLabel"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/skbCanteenWaitTime"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="60"
+            ></SeekBar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblAddress"/>
+
+        <EditText
+            android:id="@+id/edtCanteenAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+        <fragment
+            android:id="@+id/mpfMap"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/canteen_details_map_height"
+            android:layout_marginTop="@dimen/distance_small" />
+
+        <Button
+            android:id="@+id/btnSaveChanges"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/distance_extra_small"
+            android:text="@string/btnSaveChanges_text"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/colorBackground">
+    <ImageView
+        android:id="@+id/imvLogo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txvHeader_text"
+        android:textAlignment="center"
+        android:textSize="@dimen/titleFontSize"
+        android:layout_marginBottom="@dimen/titleFontSize"
+    />
+    <EditText
+        android:id="@+id/edtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edtUserName_hint"
+        android:inputType="text"
+        android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/edtPassWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edtPassword_hint"
+        android:inputType="textPassword"
+        android:textAlignment="center"/>
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnLogin_Text"
+        android:layout_marginTop="@dimen/distance_small"
+        android:textAlignment="center"
+        />
+</LinearLayout>

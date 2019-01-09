@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">CanteenManager</string>
+    <string name="btnLogin_Text">Login</string>
+    <string name="edtPassword_hint">Password</string>
+    <string name="edtUserName_hint">UserName</string>
+    <string name="msg_LoginFailed">Login failed.</string>
+    <string name="txvHeader_text">Canteen Manager</string>
+
+    <string name="txvCurrMeal_Text">Today\'s menu:</string>
+    <string name="txvCurrPrize_Text">Meal price (EUR):</string>
+    <string name="btnSaveMenuAndPrice_Text">Save Menu and Price</string>
+    <string name="canteenSuccessfullySavedMsg">Saved Successfully</string>
+    <string name="saveUnsuccessful">Error: Save not successful, please try again.</string>
+    <string name="txt_AverageWaitingTime">Average waiting time</string>
+    <string name="txt_Minutes">minutes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msg_UnableToRetrieveRatings">Unable to retrieve Ratrings</string>
+    <string name="label_byUser">By user:</string>
+    <string name="label_remark">Remark:</string>
+    <string name="lblRatingsHeader">Ratings:</string>
+    <string name="msg_deleteSuccessful">Delete successful</string>
+    <string name="msg_deleteUnSuccessful">Delete not successful</string>
+    <string name="menu_editCanteenData">Edit canteen Data</string>
+    <string name="lblCanteenName">Canteen Name</string>
+    <string name="lblWebsite">Website</string>
+    <string name="lblAvgWaitingTime">Avg. waiting time (minutes)</string>
+    <string name="lblAddress">Address</string>
+    <string name="btnSaveChanges_text">Save changes...</string>
+    <string name="mniLogout">Logout</string>
+</resources>

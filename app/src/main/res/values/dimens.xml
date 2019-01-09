@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="distance_small">8dp</dimen>
+    <dimen name="distance_extra_small">4dp</dimen>
+    <dimen name="canteen_details_map_height">240dp</dimen>
+    <dimen name="divider_thickness">1dp</dimen>
+    <dimen name="rating_bar_height">6dp</dimen>
+    <dimen name="titleFontSize">32sp</dimen>
+</resources>
