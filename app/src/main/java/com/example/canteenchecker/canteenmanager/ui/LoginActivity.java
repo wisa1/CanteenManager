@@ -59,7 +59,7 @@ public class LoginActivity extends AppCompatActivity {
         new AsyncTask<String, Void, String>() {
             @Override
             protected String doInBackground(String... strings) {
-                setUIEnabled(false);
+                //setUIEnabled(false);
                 try {
                     return new ServiceProxy().authenticate(strings[0], strings[1]);
                 } catch (IOException e) {
@@ -81,7 +81,7 @@ public class LoginActivity extends AppCompatActivity {
                     edtPassWord.setText(null);
                     Toast.makeText(LoginActivity.this, R.string.msg_LoginFailed, Toast.LENGTH_LONG).show();
                 }
-                setUIEnabled(true);
+                //setUIEnabled(true);
             }
         }.execute(edtUserName.getText().toString(), edtPassWord.getText().toString());
     }

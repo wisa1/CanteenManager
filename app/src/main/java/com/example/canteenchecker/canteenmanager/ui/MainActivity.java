@@ -76,6 +76,8 @@ public class MainActivity extends AppCompatActivity
 
     private void editCanteenData() {
         Context context = getApplication();
-        context.startActivity(EditCanteenDataActivity.createIntent(context));
+        Intent intent = EditCanteenDataActivity.createIntent(context);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(intent);
     }
 }
